@@ -3,7 +3,7 @@
     "audio": "pipewire",
     "debug": false,
     "bootloader": "systemd-bootctl",
-    "host-name": "x270-arch",
+    "hostname": "x270-arch",
     "keyboard-layout": "jp106",
     "harddrives": [
         "/dev/sda"
