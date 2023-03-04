@@ -1,16 +1,21 @@
 {
-    "config_version": "2.5.1",
-    "audio": "pipewire",
-    "debug": false,
-    "bootloader": "systemd-bootctl",
-    "hostname": "x270-arch",
-    "keyboard-layout": "jp106",
-    "harddrives": [
-        "/dev/sda"
-    ],
     "additional-repositories": [
         "multilib"
     ],
+    "archinstall-language": "English",
+    "audio": "pipewire",
+    "bootloader": "systemd-bootctl",
+    "config_version": "2.5.1",
+    "debug": false,
+    "gfx_driver": "Intel (open-source)",
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "hostname": "x270-arch",
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-layout": "jp106",
     "mirror-region": {
         "Japan": {
             "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch": true,
@@ -30,20 +35,19 @@
         "type": "nm"
     },
     "no_pkg_lookups": false,
+    "ntp": true,
     "offline": false,
+    "parallel downloads": 5,
     "profile": {
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/xorg.py"
     },
-    "parallel downloads": 5,
-    "packages": [
-    ],
-    "custom-commands": [
-    ],
-    "services": [
-    ],
+    "packages": [],
+    "custom-commands": [],
+    "save_config": null,
     "script": "guided",
+    "services": [],
     "silent": false,
-    "swap": false,
+    "swap": true,
     "sys-encoding": "UTF-8",
     "sys-language": "en_US",
     "timezone": "Asia/Tokyo",
