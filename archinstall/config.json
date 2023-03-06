@@ -45,14 +45,24 @@
         "exo", "garcon", "thunar", "thunar-volman", "tumbler",
         "xfce4-appfinder", "xfce4-panel", "xfce4-power-manager", "xfce4-session", "xfce4-settings",
         "xfconf", "xfdesktop", "xfwm4", "xfwm4-themes",
+
         "thunar-archive-plugin", "thunar-media-tags-plugin",
         "xfce4-battery-plugin", "xfce4-notifyd", "xfce4-pulseaudio-plugin",
         "xfce4-wavelan-plugin", "xfce4-whiskermenu-plugin", "xfce4-xkb-plugin",
+
         "xdg-user-dirs",
+
         "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
-        "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool"
+
+        "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
+
+        "alacritty",
+        "git", "rcync"
     ],
     "custom-commands": [
+      "LC_ALL=C xdg-user-dirs-gtk-update --force",
+      "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
+      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home /home/cabbagekobe/"
     ],
     "save_config": null,
     "script": "guided",
