@@ -57,12 +57,12 @@
         "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
 
         "alacritty",
-        "git", "rcync"
+        "git", "rsync"
     ],
     "custom-commands": [
-      "LC_ALL=C xdg-user-dirs-gtk-update --force",
-      "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
-      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home /home/cabbagekobe/"
+        "LC_ALL=C xdg-user-dirs-update --force",
+        "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
+        "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home /home/cabbagekobe/"
     ],
     "save_config": null,
     "script": "guided",
@@ -70,7 +70,7 @@
     "silent": false,
     "swap": true,
     "sys-encoding": "UTF-8",
-    "sys-language": "en_US",
+    "sys-language": "ja_JP.UTF-8",
     "timezone": "Asia/Tokyo",
     "version": "2.5.1"
 }
