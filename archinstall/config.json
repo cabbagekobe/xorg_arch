@@ -41,8 +41,19 @@
     "profile": {
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/xorg.py"
     },
-    "packages": [],
-    "custom-commands": [],
+    "packages": [
+        "exo", "garcon", "thunar", "thunar-volman", "tumbler",
+        "xfce4-appfinder", "xfce4-panel", "xfce4-power-manager", "xfce4-session", "xfce4-settings",
+        "xfconf", "xfdesktop", "xfwm4", "xfwm4-themes",
+        "thunar-archive-plugin", "thunar-media-tags-plugin",
+        "xfce4-battery-plugin", "xfce4-notifyd", "xfce4-pulseaudio-plugin",
+        "xfce4-wavelan-plugin", "xfce4-whiskermenu-plugin", "xfce4-xkb-plugin",
+        "xdg-user-dirs",
+        "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
+        "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool"
+    ],
+    "custom-commands": [
+    ],
     "save_config": null,
     "script": "guided",
     "services": [],
