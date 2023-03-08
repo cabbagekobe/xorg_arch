@@ -12,7 +12,9 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="26"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="8"/>
         <value type="int" value="5"/>
+        <value type="int" value="11"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
         <value type="int" value="6"/>
@@ -33,6 +35,8 @@
       <property name="show-labels" type="bool" value="true"/>
       <property name="flat-buttons" type="bool" value="true"/>
       <property name="show-tooltips" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="show-wireframes" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -46,14 +50,33 @@
       <property name="known-items" type="array">
         <value type="string" value="Fcitx"/>
       </property>
+      <property name="icon-size" type="int" value="20"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="hidden-items" type="array">
+      </property>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-12" type="string" value="clock"/>
     <property name="plugin-4" type="string" value="wavelan"/>
-    <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance10285"/>
+      <property name="enable-wnck" type="bool" value="false"/>
+      <property name="enable-multimedia-keys" type="bool" value="false"/>
+      <property name="enable-mpris" type="bool" value="false"/>
+      <property name="play-sound" type="bool" value="false"/>
+    </property>
+    <property name="plugin-5" type="string" value="actions">
+      <property name="button-title" type="uint" value="0"/>
+      <property name="appearance" type="uint" value="1"/>
+    </property>
+    <property name="plugin-8" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
     </property>
   </property>
 </channel>

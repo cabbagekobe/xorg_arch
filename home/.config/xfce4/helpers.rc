@@ -1,2 +1,4 @@
 TerminalEmulator=alacritty
+TerminalEmulatorDismissed=true
 
+WebBrowser=vivaldi-stable
