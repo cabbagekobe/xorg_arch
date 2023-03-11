@@ -88,7 +88,7 @@
 
         "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
         "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home/ /home/cabbagekobe/",
-        "sudo -u cabbagekobe usermod -aG docker cabbagekobe"
+        "usermod -aG docker cabbagekobe"
     ],
     "save_config": null,
     "script": "guided",
