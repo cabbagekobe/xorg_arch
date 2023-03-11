@@ -50,7 +50,9 @@
         "xfce4-battery-plugin", "xfce4-notifyd", "xfce4-pulseaudio-plugin",
         "xfce4-wavelan-plugin", "xfce4-whiskermenu-plugin", "xfce4-xkb-plugin",
 
-        "xdg-user-dirs",
+        "lightdm", "lightdm-gtk-greeter",
+
+        "xdg-user-dirs", "xcape", "xarchiver", "gvfs",
 
         "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
 
@@ -58,15 +60,43 @@
 
         "alacritty",
         "git", "rsync",
-        "rofi"
+        "rofi",
+
+        "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof", "rsync",
+
+        "ffmpeg", "streamlink", "yt-dlp", "mpv", "imagemagick",
+
+        "vim", "neovim", "xclip",
+
+        "arandr",
+        "pamixer", "pavucontrol",
+        "gpicview",
+
+        "filezilla", "flameshot",
+        "vivaldi", "vivaldi-ffmpeg-codecs",
+
+        "linux-headers", "virtualbox-host-dkms", "vagrant",
+        "docker", "docker-compose",
+        "nodejs", "npm",
+        "go"
     ],
     "custom-commands": [
+        "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
+        "sudo -u cabbagekobe curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys",
+
+        "sudo -u cabbagekobe git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
+
         "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
-        "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home/ /home/cabbagekobe/"
+        "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home/ /home/cabbagekobe/",
+        "sudo -u cabbagekobe usermod -aG docker cabbagekobe"
     ],
     "save_config": null,
     "script": "guided",
-    "services": [],
+    "services": [
+        "sshd",
+        "docker",
+        "lightdm"
+    ],
     "silent": false,
     "swap": true,
     "sys-encoding": "UTF-8",
