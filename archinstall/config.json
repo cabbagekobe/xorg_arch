@@ -62,7 +62,7 @@
         "git", "rsync",
         "rofi",
 
-        "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof", "rsync",
+        "man", "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof", "rsync",
 
         "ffmpeg", "streamlink", "yt-dlp", "mpv", "imagemagick",
 
