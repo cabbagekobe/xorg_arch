@@ -161,12 +161,6 @@
         "go"
     ],
     "custom-commands": [
-        "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
-        "sudo -u cabbagekobe curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys",
-
-        "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/xorg_arch.git /home/cabbagekobe/xorg_arch",
-        "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home/ /home/cabbagekobe/",
-        "usermod -aG docker cabbagekobe"
     ],
     "services": [
         "sshd",
