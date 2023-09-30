@@ -3,44 +3,124 @@
         "multilib"
     ],
     "archinstall-language": "English",
-    "audio": "pipewire",
-    "bootloader": "systemd-bootctl",
-    "config_version": "2.5.1",
+    "bootloader": "Systemd-boot",
+    "config_version": "2.6.0",
     "debug": false,
-    "gfx_driver": "Intel (open-source)",
-    "harddrives": [
-        "/dev/sda"
-    ],
-    "hostname": "x270-arch",
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "flags": [
+                            "Boot"
+                        ],
+                        "fs_type": "fat32",
+                        "length": {
+                            "sector_size": null,
+                            "total_size": null,
+                            "unit": "MiB",
+                            "value": 512
+                        },
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "23f3be45-e66c-4f3c-9693-fc98fb47fcb1",
+                        "start": {
+                            "sector_size": null,
+                            "total_size": null,
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "length": {
+                            "sector_size": null,
+                            "total_size": null,
+                            "unit": "GiB",
+                            "value": 20
+                        },
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "7db73f79-1cc5-4ba0-af52-5e716c08ac2c",
+                        "start": {
+                            "sector_size": null,
+                            "total_size": null,
+                            "unit": "MiB",
+                            "value": 513
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "length": {
+                            "sector_size": null,
+                            "total_size": {
+                                "sector_size": null,
+                                "total_size": null,
+                                "unit": "B",
+                                "value": 512110190592
+                            },
+                            "unit": "Percent",
+                            "value": 100
+                        },
+                        "mount_options": [],
+                        "mountpoint": "/home",
+                        "obj_id": "7483f24a-ab92-418b-a92b-1b8200e0e42b",
+                        "start": {
+                            "sector_size": null,
+                            "total_size": null,
+                            "unit": "GiB",
+                            "value": 20
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "cabbage-bmax",
     "kernels": [
         "linux"
     ],
-    "keyboard-layout": "jp106",
-    "mirror-region": {
-        "Japan": {
-            "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch": true,
-            "http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch": true,
-            "http://mirrors.cat.net/archlinux/$repo/os/$arch": true,
-            "https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch": true,
-            "https://mirror.saebasol.org/archlinux/$repo/os/$arch": true,
-            "https://mirrors.cat.net/archlinux/$repo/os/$arch": true
+    "locale_config": {
+        "kb_layout": "jp106",
+        "sys_enc": "UTF-8",
+        "sys_lang": "ja_JP.UTF-8"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "Japan": [
+                "https://repo.jing.rocks/archlinux/$repo/os/$arch",
+                "https://mirrors.cat.net/archlinux/$repo/os/$arch",
+                "https://mirror.nishi.network/archlinux/$repo/os/$arch",
+                "https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch",
+                "http://repo.jing.rocks/archlinux/$repo/os/$arch",
+                "http://mirrors.cat.net/archlinux/$repo/os/$arch",
+                "http://mirror.nishi.network/archlinux/$repo/os/$arch",
+                "http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch",
+                "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch"
+            ]
         }
     },
-    "nic": {
-        "dhcp": true,
-        "dns": null,
-        "gateway": null,
-        "iface": null,
-        "ip": null,
+    "network_config": {
         "type": "nm"
     },
     "no_pkg_lookups": false,
     "ntp": true,
     "offline": false,
-    "parallel downloads": 5,
-    "profile": {
-        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/xorg.py"
-    },
     "packages": [
         "exo", "garcon", "thunar", "thunar-volman", "tumbler",
         "xfce4-appfinder", "xfce4-panel", "xfce4-power-manager", "xfce4-session", "xfce4-settings",
@@ -88,17 +168,24 @@
         "sudo -u cabbagekobe rsync -a /home/cabbagekobe/xorg_arch/home/ /home/cabbagekobe/",
         "usermod -aG docker cabbagekobe"
     ],
-    "save_config": null,
-    "script": "guided",
     "services": [
         "sshd",
         "docker",
         "lightdm"
     ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": null,
+        "profile": {
+            "custom_settings": {},
+            "details": [],
+            "main": "Xorg"
+        }
+    },
+    "script": "guided",
     "silent": false,
     "swap": true,
-    "sys-encoding": "UTF-8",
-    "sys-language": "ja_JP.UTF-8",
     "timezone": "Asia/Tokyo",
-    "version": "2.5.1"
+    "version": "2.6.0"
 }
