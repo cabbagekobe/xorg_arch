@@ -139,10 +139,10 @@
         "greetd",
         "greetd-tuigreet",
 
-        "uswm",
+        "uwsm",
         "hyprland",
         "xdg-desktop-portal-hyprland",
-        "xfce-polkit",
+        "polkit-kde-agent",
         "qt5-wayland",
         "qt6-wayland",
 
