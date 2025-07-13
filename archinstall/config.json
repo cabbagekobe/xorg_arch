@@ -120,11 +120,47 @@
     },
     "ntp": true,
     "packages": [
+        "alacritty",
+
         "git",
+        "openssh",
+        "htop",
+        "iwd",
+        "wget",
+        "ffmpeg",
+        "smartmontools",
+        "xdg-user-dirs-gtk",
+
+        "noto-fonts",
         "noto-fonts-cjk",
         "noto-fonts-emoji",
         "noto-fonts-extra",
-        "neovim"
+
+        "greetd",
+        "greetd-tuigreet",
+
+        "uswm",
+        "hyprland",
+        "xdg-desktop-portal-hyprland",
+        "xfce-polkit",
+        "qt5-wayland",
+        "qt6-wayland",
+
+        "thunar",
+        "gvfs",
+        "tumbler",
+        "ffmpegthumbnailer",
+
+        "pipewire",
+        "pipewire-pulse",
+        "pipewire-jack",
+
+        "fcitx5-im",
+        "fcitx5-mozc",
+        "fcitx5-configtool",
+
+        "neovim",
+        "xclip"
     ],
     "parallel_downloads": 0,
     "profile_config": {
@@ -136,7 +172,10 @@
             "main": "Minimal"
         }
     },
-    "services": [],
+    "services": [
+        "sshd",
+        "greetd"
+    ],
     "swap": true,
     "timezone": "Japan",
     "version": null
